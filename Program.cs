@@ -41,7 +41,7 @@ app.MapPost("/producto", async (Producto producto,ProductoDb db) =>
     return Results.Created($"/productos/{producto.ID}", producto);
 }
     );
-app.MapPut("/producto", async (int id, Producto putProducto,ProductoDb db) =>{
+app.MapPut("/producto/{id}", async (int id, Producto putProducto,ProductoDb db) =>{
 
     var producto = await db.Productos.FindAsync(id);
     if(producto is null) return Results.NotFound();
