@@ -1,5 +1,5 @@
 # CRUD-MINIMAL-ASPNETCORE
----
+
 ## Peticiones 
 - GET : https://apisrada.azurewebsites.net/producto
 - GET POR ID : https://apisrada.azurewebsites.net/producto/{id}
